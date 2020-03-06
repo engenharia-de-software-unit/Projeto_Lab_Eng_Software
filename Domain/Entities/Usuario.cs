@@ -17,5 +17,10 @@
         public virtual Administrador Administrador { get; private set; }
         public virtual Medico Medico { get; private set; }
         public virtual Recepcionista Recepcionista { get; private set; }
+
+        public void AlterarSenha(string novaSenha)
+        {
+            Senha = novaSenha;
+        }
     }
 }

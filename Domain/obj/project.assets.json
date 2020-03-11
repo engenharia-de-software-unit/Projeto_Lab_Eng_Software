@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "DomainValidation/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net453/DomainValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net453/DomainValidation.dll": {}
+        }
+      },
       "Microsoft.AspNet.Mvc/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -55,6 +64,22 @@
     }
   },
   "libraries": {
+    "DomainValidation/1.0.0": {
+      "sha512": "u6NxTpdHj2pCA0Kh9FfgJh9XZJA6NsEKu/kvjzRLT3Exn+ik88UOZOWNsczt8rXZFgZ50dzUZ0Vq2tHXtJR/mQ==",
+      "type": "package",
+      "path": "domainvalidation/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "domainvalidation.1.0.0.nupkg.sha512",
+        "domainvalidation.nuspec",
+        "lib/net35/DomainValidation.dll",
+        "lib/net40/DomainValidation.dll",
+        "lib/net45/DomainValidation.dll",
+        "lib/net451/DomainValidation.dll",
+        "lib/net453/DomainValidation.dll"
+      ]
+    },
     "Microsoft.AspNet.Mvc/5.2.7": {
       "sha512": "m3hUsn48k6Qb5El9A8naTwGTLCdSQKGSpGweqIfiVKltGJzAJJxuXvhhaQQtLCGg3i5V88iGjz0JG72/tlFKlg==",
       "type": "package",
@@ -119,6 +144,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DomainValidation >= 1.0.0",
       "Microsoft.AspNet.Mvc >= 5.2.7"
     ]
   },
@@ -159,6 +185,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "DomainValidation": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.AspNet.Mvc": {
             "target": "Package",
             "version": "[5.2.7, )"
@@ -184,6 +214,16 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'DomainValidation 1.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "DomainValidation",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

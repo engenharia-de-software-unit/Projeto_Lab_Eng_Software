@@ -1,4 +1,7 @@
-﻿namespace Domain.Entities
+﻿using Domain.Validations.Usuarios;
+using DomainValidation.Validation;
+
+namespace Domain.Entities
 {
     public partial class Usuario
     {
@@ -14,6 +17,8 @@
         public string Email { get; private set; }
         public string Senha { get; private set; }
 
+        public ValidationResult Validation { get; set; }
+
         public virtual Administrador Administrador { get; private set; }
         public virtual Medico Medico { get; private set; }
         public virtual Recepcionista Recepcionista { get; private set; }
@@ -21,6 +26,12 @@
         public void AlterarSenha(string novaSenha)
         {
             Senha = novaSenha;
+        }
+
+        public bool IsValid()
+        {
+            Validation = new UsuarioValidarDados().Validate(this);
+            return Validation.IsValid;
         }
     }
 }

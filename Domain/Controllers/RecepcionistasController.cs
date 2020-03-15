@@ -35,5 +35,16 @@ namespace Domain.Controllers
         public Recepcionista ObterPorId(int id) {
             return _unitOfWork.RepositoryRecepcionista.Obter().Where(r => r.Id == id).FirstOrDefault();
         }
+
+        //Método Excluir(int id)
+        public bool Excluir(int id) {
+            var recepcionista = ObterPorId(id);
+            if (recepcionista != null) {
+                _unitOfWork.RepositoryRecepcionista.Remover(recepcionista);
+                _unitOfWork.Commit();
+                return true;
+            }
+            return false;
+        }
     }
 }

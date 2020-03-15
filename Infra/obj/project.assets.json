@@ -788,19 +788,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luisz\\.nuget\\packages\\": {}
+    "C:\\Users\\gugam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luisz\\OneDrive\\Documentos\\Faculdade\\Lab. Eng. de Software\\HospitalUniversitario\\Infra\\Infra.csproj",
+      "projectUniqueName": "D:\\Arquivos de Programas (D)\\Git\\Projeto_Lab_Eng_Software\\Infra\\Infra.csproj",
       "projectName": "Infra",
-      "projectPath": "C:\\Users\\luisz\\OneDrive\\Documentos\\Faculdade\\Lab. Eng. de Software\\HospitalUniversitario\\Infra\\Infra.csproj",
-      "packagesPath": "C:\\Users\\luisz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luisz\\OneDrive\\Documentos\\Faculdade\\Lab. Eng. de Software\\HospitalUniversitario\\Infra\\obj\\",
+      "projectPath": "D:\\Arquivos de Programas (D)\\Git\\Projeto_Lab_Eng_Software\\Infra\\Infra.csproj",
+      "packagesPath": "C:\\Users\\gugam\\.nuget\\packages\\",
+      "outputPath": "D:\\Arquivos de Programas (D)\\Git\\Projeto_Lab_Eng_Software\\Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\luisz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gugam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -813,8 +813,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\luisz\\OneDrive\\Documentos\\Faculdade\\Lab. Eng. de Software\\HospitalUniversitario\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\luisz\\OneDrive\\Documentos\\Faculdade\\Lab. Eng. de Software\\HospitalUniversitario\\Domain\\Domain.csproj"
+            "D:\\Arquivos de Programas (D)\\Git\\Projeto_Lab_Eng_Software\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Arquivos de Programas (D)\\Git\\Projeto_Lab_Eng_Software\\Domain\\Domain.csproj"
             }
           }
         }
@@ -843,6 +843,16 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
